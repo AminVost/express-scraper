@@ -19,7 +19,7 @@ app.post("/api/fetch-comments", async (req, res) => {
 
     const result = await fetchComments(url);
     res.json(result);
-  } catch (error) {
+  } catch (error) { 
     console.error("❌ Error:", error);
     res.status(500).json({ error: "Internal Server Error" });
   }
